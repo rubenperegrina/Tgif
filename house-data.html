@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!--Mustache-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+    </head>
+
+    <body class="container">
+        <div class="backgroundheader">
+            <div class="main row">
+                <div class="col-xs-12">
+                    <img class="logo" src="http://vignette3.wikia.nocookie.net/es.harrypotter/images/f/f8/Logo_del_MACUSA.png/revision/latest?cb=20160709003033" alt="logo">
+                </div>
+            </div>
+        </div>
+        <nav>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="home.html">Congress of EEUU</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="home.html">Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Congress 113
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="active"><a href="house-data.html">House</a></li>
+                                <li><a href="senate-data.html">Senate</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Attendance
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="attendance-house.html">House</a></li>
+                                <li><a href="attendance-senate.html">Senate</a></li>
+                            </ul>
+                        </li>  
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Party Loyalty
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="partyloyalty-house.html">House</a></li>
+                                <li><a href="partyloyalty-senate.html">Senate</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="right">
+                        <a href="mailto:info@tgif.com">info@tgif.com</a>
+                    </div>
+                </div>
+            </nav>
+        </nav>  
+           <nav>          
+            <div class=" col-xs-12 grey">
+                <h2>Congressmen</h2>
+                <p>The major power of the House is to pass federal legislation that affects the entire country, although its bills must also be passed by the Senate and further agreed to by the U.S. President before becoming law (unless both the House and Senate re-pass the legislation with a two-thirds majority in each chamber). The House has some exclusive powers: the power to initiate revenue bills, to impeach officials (impeached officials are subsequently tried in the Senate), and to elect the U.S. President in case there is no majority in the Electoral College.</p>
+                <p>Each U.S. state is represented in the House in proportion to its population as measured in the census, but every state is entitled to at least one representative. </p>
+            </div>
+            </nav>
+            <div>
+            <div id="party_filter" class=" col-xs-6 blue">
+                <label> Select Party</label>
+                <input type="checkbox" id="R" value="R"> Republicans
+                <input type="checkbox" id="D" value="D"> Democrats
+                <input type="checkbox" id="I" value="I"> Independents
+            </div>
+            
+            <div id="statedropdown" class=" col-xs-6 blue">
+            </div>
+            </div>
+        <pre class="pre-scrollable">
+        <div>
+            <table id="house-data" class="table table-hover">
+            </table>
+        </div>
+        </pre>
+        <div class="navbar navbar-default center">
+            <h4>
+                2016 Congress of the UNITED STATES of AMERICA <img class="logo2" src="http://vignette3.wikia.nocookie.net/es.harrypotter/images/f/f8/Logo_del_MACUSA.png/revision/latest?cb=20160709003033" alt="logo"> All Rights Reserved 
+            </h4>
+        </div>
+        <script src="NYT-congreso-113-house.js"></script>
+        <script src="scripthouse.js"></script>
+        </body>
+</html>

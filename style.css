@@ -1,0 +1,44 @@
+.backgroundheader {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/27/Capitol_Building_Full_View.jpg);
+    background-size: cover;
+    background-position:center;
+}
+.grey {
+    background-color:lightgrey;
+}
+.blue {
+    background-color: #4591e4;
+}
+body {
+    background-image: url(https://image.freepik.com/free-vector/bunting-of-usa-on-wooden-background_1048-6.jpg);
+}
+.logo {
+    height: 150px;
+}
+.logo2 {
+    height: 50px;
+}
+.pre-scrollable {
+    opacity:0.8;
+}
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+    margin-top: 15px;
+}
+.imghome {
+    height: 500px;
+}
+#houseleastengaged, #housemostengaged, #houseglance, #houseglanceloyal, #senateleastengaged, #senatemostengaged, #senateglance, #housemostloyal, #houseleastloyal {
+    background-color: white;
+    opacity:0.8;
+}
+.separate {
+    height: 30px; 
+}
+#white {
+    background-color: white;
+    opacity:0.8;
+}

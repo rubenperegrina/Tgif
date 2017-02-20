@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!--Mustache-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+    </head>
+
+    <body class="container">
+        <div class="backgroundheader">
+            <div class="main row">
+                <div class="col-xs-12">
+                    <img class="logo" src="http://vignette3.wikia.nocookie.net/es.harrypotter/images/f/f8/Logo_del_MACUSA.png/revision/latest?cb=20160709003033" alt="logo">
+                </div>
+            </div>
+        </div>
+        <nav>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="home.html">Congress of EEUU</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="home.html">Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Congress 113
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="house-data.html">House</a></li>
+                                <li><a href="senate-data.html">Senate</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Attendance
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="active"><a href="attendance-house.html">House</a></li>
+                                <li><a href="attendance-senate.html">Senate</a></li>
+                            </ul>
+                        </li>  
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Party Loyalty
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="partyloyalty-house.html">House</a></li>
+                                <li><a href="partyloyalty-senate.html">Senate</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="right">
+                        <a href="mailto:info@tgif.com">info@tgif.com</a>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+
+
+
+
+        <div class="row">
+            <div class="col-xs-6 grey">
+                <h2>Attendance</h2>
+                <p>The Constitution specifies that a majority of members constitutes a quorum to do business in each house. Representatives and senators rarely force the presence of a quorum by demanding quorum calls; thus, in most cases, debates continue even if a majority is not present.</p>
+
+                <p>The Senate uses roll-call votes; a clerk calls out the names of all the senators, each senator stating "aye" or "no" when his or her name is announced. The House reserves roll-call votes for the most formal matters, as a roll-call of all 435 representatives takes quite some time; normally, members vote by electronic device. In the case of a tie, the motion in question fails. In the Senate, the Vice President may (if present) cast the tiebreaking vote.</p>  
+            </div>
+            <!--id="houseglance"-->
+            <div id="houseglance" class="col-xs-6">
+               
+                <script id="row-template" type="text/html">
+                   <table class="table table-hover">
+                       <tbody>
+                            <tr>
+                              <td>{{party}}</td>
+                              <td>{{numberofreps}}</td>
+                              <td>{{votedwithparty}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </script>
+
+                <table class="table table-hover"><tbody><tr><th>Party</th><th>Number of Reps </th><th>% Voted with Prty</th></tr><tr><td>Republicans</td><td>235</td><td>92.95</td></tr><tr><td>Democrats</td><td>206</td><td>89.38</td></tr><tr><td>Independents</td><td>1</td><td>0.00</td></tr><tr><td>Total</td><td>442</td><td>91.08</td></tr></tbody></table>
+            </div>
+
+
+        </div>
+
+        <br></br>
+
+    <div class="row">
+        <!--id="houseleastengaged"-->
+        <div  id="white" class="col-xs-6 pre-scrollable">
+
+            <table class="table table-hover"><tbody><tr><th>Name</th><th>No.Missed Votes </th><th> % Missed</th></tr><tr><td><a href="http://boehner.house.gov">John A. Boehner</a></td><td>1165</td><td>97.73%</td></tr><tr><td><a href="http://carolynmccarthy.house.gov">Carolyn  McCarthy</a></td><td>687</td><td>57.63%</td></tr><tr><td><a href="http://www.campbell.house.gov">John  Campbell</a></td><td>525</td><td>44.04%</td></tr><tr><td><a href="http://rush.house.gov">Bobby L. Rush</a></td><td>484</td><td>40.60%</td></tr><tr><td><a href="http://garymiller.house.gov">Gary G. Miller</a></td><td>414</td><td>34.73%</td></tr><tr><td><a href="http://herrerabeutler.house.gov">Jaime  Herrera Beutler</a></td><td>317</td><td>26.59%</td></tr><tr><td><a href="http://nunnelee.house.gov">Alan  Nunnelee</a></td><td>278</td><td>23.32%</td></tr><tr><td><a href="http://schwartz.house.gov">Allyson Y. Schwartz</a></td><td>212</td><td>17.79%</td></tr><tr><td><a href="http://gutierrez.house.gov">Luis V. Gutierrez</a></td><td>208</td><td>17.45%</td></tr><tr><td><a href="http://rangel.house.gov">Charles B. Rangel</a></td><td>191</td><td>16.02%</td></tr><tr><td><a href="http://negretemcleod.house.gov">Gloria  Negrete McLeod</a></td><td>184</td><td>15.44%</td></tr><tr><td><a href="http://richmond.house.gov">Cedric  Richmond</a></td><td>174</td><td>14.60%</td></tr><tr><td><a href="http://coble.house.gov">Howard  Coble</a></td><td>174</td><td>14.60%</td></tr><tr><td><a href="http://kingston.house.gov">Jack  Kingston</a></td><td>164</td><td>13.76%</td></tr><tr><td><a href="http://horsford.house.gov">Steven  Horsford</a></td><td>161</td><td>13.51%</td></tr><tr><td><a href="http://gosar.house.gov">Paul  Gosar</a></td><td>159</td><td>13.34%</td></tr><tr><td><a href="http://holt.house.gov">Rush  Holt</a></td><td>156</td><td>13.09%</td></tr><tr><td><a href="http://hinojosa.house.gov">Rubén  Hinojosa</a></td><td>155</td><td>13.00%</td></tr><tr><td><a href="http://desjarlais.house.gov">Scott  DesJarlais</a></td><td>153</td><td>12.84%</td></tr><tr><td><a href="http://www.pastor.house.gov">Ed  Pastor</a></td><td>147</td><td>12.33%</td></tr><tr><td><a href="http://johnlewis.house.gov">John  Lewis</a></td><td>144</td><td>12.15%</td></tr><tr><td><a href="http://bass.house.gov">Karen  Bass</a></td><td>139</td><td>11.66%</td></tr><tr><td><a href="http://hanabusa.house.gov">Colleen  Hanabusa</a></td><td>134</td><td>11.24%</td></tr><tr><td><a href="http://adamsmith.house.gov">Adam  Smith</a></td><td>130</td><td>10.91%</td></tr><tr><td><a href="http://gingrey.house.gov">Phil  Gingrey</a></td><td>129</td><td>10.82%</td></tr><tr><td><a href="http://grijalva.house.gov">Raúl M. Grijalva</a></td><td>122</td><td>10.23%</td></tr><tr><td><a href="http://alceehastings.house.gov">Alcee L. Hastings</a></td><td>117</td><td>9.82%</td></tr><tr><td><a href="http://pelosi.house.gov">Nancy  Pelosi</a></td><td>114</td><td>9.56%</td></tr><tr><td><a href="http://cleaver.house.gov">Emanuel  Cleaver II</a></td><td>114</td><td>9.56%</td></tr><tr><td><a href="http://radel.house.gov/">Trey  Radel</a></td><td>62</td><td>9.47%</td></tr><tr><td><a href="http://dingell.house.gov">John D. Dingell</a></td><td>112</td><td>9.40%</td></tr><tr><td><a href="http://culberson.house.gov">John  Culberson</a></td><td>112</td><td>9.40%</td></tr><tr><td><a href="">James  Lankford</a></td><td>111</td><td>9.31%</td></tr><tr><td><a href="http://lynch.house.gov">Stephen F. Lynch</a></td><td>110</td><td>9.23%</td></tr><tr><td><a href="http://aderholt.house.gov">Robert B. Aderholt</a></td><td>110</td><td>9.23%</td></tr><tr><td><a href="http://mcallister.house.gov">Vance  McAllister</a></td><td>52</td><td>8.93%</td></tr><tr><td><a href="http://polis.house.gov">Jared  Polis</a></td><td>106</td><td>8.89%</td></tr><tr><td><a href="http://georgemiller.house.gov">George  Miller</a></td><td>103</td><td>8.64%</td></tr><tr><td><a href="http://www.louise.house.gov">Louise M. Slaughter</a></td><td>99</td><td>8.31%</td></tr><tr><td><a href="http://bachmann.house.gov">Michele  Bachmann</a></td><td>96</td><td>8.05%</td></tr><tr><td><a href="http://donyoung.house.gov">Don  Young</a></td><td>95</td><td>7.97%</td></tr><tr><td><a href="http://amodei.house.gov">Mark  Amodei</a></td><td>95</td><td>7.97%</td></tr><tr><td><a href="http://honda.house.gov">Michael M. Honda</a></td><td>93</td><td>7.80%</td></tr><tr><td><a href="http://hanna.house.gov">Richard  Hanna</a></td><td>91</td><td>7.63%</td></tr><tr><td><a href="http://jones.house.gov">Walter B. Jones</a></td><td>90</td><td>7.55%</td></tr></tbody></table>
+        </div>
+
+
+        <!--id="housemostengaged"-->
+        <div id="white" class="col-xs-6 pre-scrollable">
+            <table class="table table-hover"><tbody><tr><th>Name</th><th>No.Missed Votes </th><th> % Missed</th></tr><tr><td><a href="http://amash.house.gov">Justin  Amash</a></td><td>0</td><td>0.00%</td></tr><tr><td><a href="http://jolly.house.gov">David W. Jolly</a></td><td>0</td><td>0.00%</td></tr><tr><td><a href="http://pierluisi.house.gov">Pedro  Pierluisi</a></td><td>0</td><td>0.00%</td></tr><tr><td><a href="http://bordallo.house.gov">Madeleine Z. Bordallo</a></td><td>0</td><td>0.00%</td></tr><tr><td><a href="http://barrow.house.gov">John  Barrow</a></td><td>0</td><td>0.00%</td></tr><tr><td><a href="http://norton.house.gov">Eleanor Holmes Norton</a></td><td>0</td><td>0.00%</td></tr><tr><td><a href="http://faleomavaega.house.gov">Eni F. H. Faleomavaega</a></td><td>0</td><td>0.00%</td></tr><tr><td><a href="http://lance.house.gov">Leonard  Lance</a></td><td>0</td><td>0.00%</td></tr><tr><td><a href="http://long.house.gov">Billy  Long</a></td><td>0</td><td>0.00%</td></tr><tr><td><a href="http://mckinley.house.gov">David  McKinley</a></td><td>0</td><td>0.00%</td></tr><tr><td><a href="http://womack.house.gov">Steve  Womack</a></td><td>0</td><td>0.00%</td></tr><tr><td><a href="http://donnachristensen.house.gov">Donna M.C. Christensen</a></td><td>0</td><td>0.00%</td></tr><tr><td><a href="http://sablan.house.gov">Gregorio 'Kilili' Camacho Sablan</a></td><td>0</td><td>0.00%</td></tr><tr><td><a href="http://bonamici.house.gov">Suzanne  Bonamici</a></td><td>1</td><td>0.08%</td></tr><tr><td><a href="http://rothfus.house.gov">Keith  Rothfus</a></td><td>1</td><td>0.08%</td></tr><tr><td><a href="http://price.house.gov">David E. Price</a></td><td>1</td><td>0.08%</td></tr><tr><td><a href="http://massie.house.gov">Thomas  Massie</a></td><td>1</td><td>0.08%</td></tr><tr><td><a href="http://chabot.house.gov">Steven J. Chabot</a></td><td>1</td><td>0.08%</td></tr><tr><td><a href="http://billjohnson.house.gov">Bill  Johnson</a></td><td>1</td><td>0.08%</td></tr><tr><td><a href="http://kevinmccarthy.house.gov">Kevin  McCarthy</a></td><td>1</td><td>0.08%</td></tr><tr><td><a href="http://mica.house.gov">John L. Mica</a></td><td>1</td><td>0.08%</td></tr><tr><td><a href="http://levin.house.gov">Sander M. Levin</a></td><td>2</td><td>0.17%</td></tr><tr><td><a href="http://takano.house.gov">Mark  Takano</a></td><td>2</td><td>0.17%</td></tr><tr><td><a href="http://cuellar.house.gov">Henry  Cuellar</a></td><td>2</td><td>0.17%</td></tr><tr><td><a href="http://jeffduncan.house.gov">Jeffrey  Duncan</a></td><td>2</td><td>0.17%</td></tr><tr><td><a href="http://candicemiller.house.gov">Candice S. Miller</a></td><td>2</td><td>0.17%</td></tr><tr><td><a href="http://fleming.house.gov">John  Fleming</a></td><td>2</td><td>0.17%</td></tr><tr><td><a href="http://foxx.house.gov">Virginia  Foxx</a></td><td>3</td><td>0.25%</td></tr><tr><td><a href="http://dankildee.house.gov">Dan  Kildee</a></td><td>3</td><td>0.25%</td></tr><tr><td><a href="http://tonko.house.gov">Paul  Tonko</a></td><td>3</td><td>0.25%</td></tr><tr><td><a href="http://latta.house.gov">Robert E. Latta</a></td><td>3</td><td>0.25%</td></tr><tr><td><a href="http://orourke.house.gov">Beto  O'Rourke</a></td><td>3</td><td>0.25%</td></tr><tr><td><a href="http://lynnjenkins.house.gov">Lynn  Jenkins</a></td><td>3</td><td>0.25%</td></tr><tr><td><a href="http://dent.house.gov">Charlie  Dent</a></td><td>4</td><td>0.34%</td></tr><tr><td><a href="http://paulryan.house.gov">Paul D. Ryan</a></td><td>4</td><td>0.34%</td></tr><tr><td><a href="http://lobiondo.house.gov">Frank A. LoBiondo</a></td><td>4</td><td>0.34%</td></tr><tr><td><a href="http://farenthold.house.gov">Blake  Farenthold</a></td><td>4</td><td>0.34%</td></tr><tr><td><a href="http://kline.house.gov">John  Kline</a></td><td>4</td><td>0.34%</td></tr><tr><td><a href="http://juliabrownley.house.gov">Julia  Brownley</a></td><td>4</td><td>0.34%</td></tr><tr><td><a href="http://desantis.house.gov">Ron  DeSantis</a></td><td>4</td><td>0.34%</td></tr><tr><td><a href="http://paulsen.house.gov">Erik  Paulsen</a></td><td>4</td><td>0.34%</td></tr><tr><td><a href="http://meehan.house.gov">Pat  Meehan</a></td><td>5</td><td>0.42%</td></tr><tr><td><a href="http://collinpeterson.house.gov">Collin C. Peterson</a></td><td>5</td><td>0.42%</td></tr><tr><td><a href="http://posey.house.gov">Bill  Posey</a></td><td>5</td><td>0.42%</td></tr><tr><td><a href="http://reichert.house.gov">Dave  Reichert</a></td><td>5</td><td>0.42%</td></tr></tbody></table>
+        </div>
+
+    </div>
+
+    <div class="navbar navbar-default center">
+        <h4>
+            2016 Congress of the UNITED STATES of AMERICA <img class="logo2" src="http://vignette3.wikia.nocookie.net/es.harrypotter/images/f/f8/Logo_del_MACUSA.png/revision/latest?cb=20160709003033" alt="logo"> All Rights Reserved 
+        </h4>
+    </div>
+    <script src="NYT-congreso-113-house.js"></script>
+    <script src="statistics.js"></script>
+    <script src="script-attendance-house.js"></script>
+    </body>
+</html

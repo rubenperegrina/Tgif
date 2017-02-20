@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!--Mustache-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+    </head>
+
+    <body class="container">
+        <div class="backgroundheader">
+            <div class="main row">
+                <div class="col-xs-12">
+                    <img class="logo" src="http://vignette3.wikia.nocookie.net/es.harrypotter/images/f/f8/Logo_del_MACUSA.png/revision/latest?cb=20160709003033" alt="logo">
+                </div>
+            </div>
+        </div>
+        <nav>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="home.html">Congress of EEUU</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="home.html">Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Congress 113
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="house-data.html">House</a></li>
+                                <li class="active"><a href="senate-data.html">Senate</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Attendance
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="attendance-house.html">House</a></li>
+                                <li><a href="attendance-senate.html">Senate</a></li>
+                            </ul>
+                        </li>  
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Party Loyalty
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="partyloyalty-house.html">House</a></li>
+                                <li><a href="partyloyalty-senate.html">Senate</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="right">
+                        <a href="mailto:info@tgif.com">info@tgif.com</a>
+                    </div>
+                </div>
+            </nav>
+        </nav>  
+           <nav>          
+            <div class="col-xs-12 grey">
+                <h2>Senators</h2>
+                <p>First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House.</p>
+            </div>
+            </nav>
+           <div>
+            <div id="party_filter" class=" col-xs-6 blue">
+                <label> Select Party</label>
+                <input type="checkbox" id="R" value="R"> Republicans
+                <input type="checkbox" id="D" value="D"> Democrats
+                <input type="checkbox" id="I" value="I"> Independents
+            </div>
+            
+            <div id="statedropdown" class="col-xs-6 blue">
+            </div>
+            </div>
+        <pre class="pre-scrollable">
+        <div>
+            <table id="senate-data" class="table table-hover">
+            </table>
+        </div>
+        </pre>
+        <div class="navbar navbar-default center">
+            <h4>
+                2016 Congress of the UNITED STATES of AMERICA <img class="logo2" src="http://vignette3.wikia.nocookie.net/es.harrypotter/images/f/f8/Logo_del_MACUSA.png/revision/latest?cb=20160709003033" alt="logo"> All Rights Reserved 
+            </h4>
+        </div>
+        <script src="NYT-congreso-113-senate.js"></script>
+        <script>document.getElementById("senate-data").innerHTML = JSON.stringify(data,null,2);</script>
+        <script src="scriptsenate.js"></script>
+    </body>
+</html>

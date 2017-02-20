@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!--Mustache-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+    </head>
+
+    <body class="container">
+        <div class="backgroundheader">
+            <div class="main row">
+                <div class="col-xs-12">
+                    <img class="logo" src="http://vignette3.wikia.nocookie.net/es.harrypotter/images/f/f8/Logo_del_MACUSA.png/revision/latest?cb=20160709003033" alt="logo">
+                </div>
+            </div>
+        </div>
+        <nav>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="home.html">Congress of EEUU</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="home.html">Home</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Congress 113
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="house-data.html">House</a></li>
+                                <li><a href="senate-data.html">Senate</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Attendance
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="attendance-house.html">House</a></li>
+                                <li><a href="attendance-senate.html">Senate</a></li>
+                            </ul>
+                        </li>  
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Party Loyalty
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="partyloyalty-house.html">House</a></li>
+                                <li class="active"><a href="partyloyalty-senate.html">Senate</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="right">
+                        <a href="mailto:info@tgif.com">info@tgif.com</a>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+
+
+
+
+        <div class="row">
+            <div class="col-xs-6 grey">
+                <h2>Party Loyalty</h2>
+                <p>Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting for their party's nominee for office and legislation that backs their party's agenda.
+                </p>  
+            </div>
+            <div  id="senateglance" class="col-xs-6 pre-scrollable">
+            </div>
+        </div>
+
+        <br></br>
+
+        <div class="row">
+
+            <div  id="senateleastengaged" class="col-xs-6 pre-scrollable">
+            </div>
+
+
+            <div id="senatemostengaged" class="col-xs-6 pre-scrollable">
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <div class="navbar navbar-default center">
+            <h4>
+                2016 Congress of the UNITED STATES of AMERICA <img class="logo2" src="http://vignette3.wikia.nocookie.net/es.harrypotter/images/f/f8/Logo_del_MACUSA.png/revision/latest?cb=20160709003033" alt="logo"> All Rights Reserved 
+            </h4>
+        </div>
+        <script src="NYT-congreso-113-senate.js"></script>
+        <script src="statistics.js"></script>
+        <script src="script-loyalty-senate.js"></script>
+    </body>
+</html
